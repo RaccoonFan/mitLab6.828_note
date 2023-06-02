@@ -11,11 +11,11 @@ Some Syntax of AT&T
 Use QEMU to emulate a x86 PC.
 
 ### The PC's Physical Address Space
-![Physical Address Space](https://github.com/RaccoonFan/mitLab6.828_note/blob/main/images/Physical_Address_Space.png)
+![Physical Address Space](https://github.com/RaccoonFan/mitLab6.828_note/blob/main/images/lab1/Physical_Address_Space.png)
 
 ### The ROM BIOS
 The first instruction of IBM PC
-![first instruction](https://github.com/RaccoonFan/mitLab6.828_note/blob/main/images/firstinstruction.bmp)
+![first instruction](https://github.com/RaccoonFan/mitLab6.828_note/blob/main/images/lab1/firstinstruction.bmp)
 [CS:IP] ljmp newCS,newIP  
 Physical Address on real mode addressing is equal to $16 * CS + IP$.  
 
@@ -26,7 +26,8 @@ The Boot Loader performs two main functions:
 
 ### Exercise 3
 * At what point does the processor start executing 32-bit code? What exactly causes the switch from 16- to 32-bit mode?  
-
+![boot.S](https://github.com/RaccoonFan/mitLab6.828_note/blob/main/images/lab1/boot.bmp)
+The processor started executing 32-bit code at the 57th line ".code32".The 55th line causes the switch from 16- to 32-bit mode.
 * What is the last instruction of the boot loader executed, and what is the first instruction of the kernel it just loaded?
 
 * Where is the first instruction of the kernel?
